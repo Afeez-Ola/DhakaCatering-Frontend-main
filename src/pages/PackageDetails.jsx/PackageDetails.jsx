@@ -55,7 +55,7 @@ export default function PackageDetails() {
       <PageBanner bg_img={bg_img} title={name} />
 
       {/* ===================== First Section Start ===================== */}
-      <div className="flex pt-16 flex-col md:flex-row flex-wrap items-center md:items-start gap-7 px-5 md:px-10">
+      <div className="flex flex-col flex-wrap items-center px-5 pt-16 md:flex-row md:items-start gap-7 md:px-10">
         <div className="flex-1 mb-7 md:mb-0">
           <img
             className="rounded-md max-h-[500px] object-cover w-full"
@@ -64,23 +64,23 @@ export default function PackageDetails() {
           />
         </div>
         <div className="flex-1">
-          <h3 className="font-semibold text-3xl">{name}</h3>
+          <h3 className="text-3xl font-semibold">{name}</h3>
           <span className="badge badge-success badge-sm">{category}</span>
           {/*  <div className="flex gap-16 mt-7">
-            <p className="font-bold text-lg">{price} ৳</p>
+            <p className="text-lg font-bold">{price} ৳</p>
             <p>
               <span className="font-semibold">Category:</span> {category}
             </p>
           </div> */}
           <div className="mt-4 max-w-[260px]">
             {allItems.map((item) => (
-              <div className="flex justify-between items-center mt-1">
+              <div className="flex items-center justify-between mt-1">
                 <h2>{item?.id?.name}</h2>
                 <span>{item.qty}</span>
               </div>
             ))}
 
-            <div className="mt-3 flex items-center justify-between">
+            <div className="flex items-center justify-between mt-3">
               <p className=" text-md">Total Per Person -</p>
               <p className="font-semibold">{price}</p>
             </div>
@@ -91,18 +91,18 @@ export default function PackageDetails() {
               <input
                 type="number"
                 placeholder="Minimum 50"
-                className="input rounded-md input-bordered"
+                className="rounded-md input input-bordered"
                 onChange={(e) => calculatePrice(e.target.value)}
               />
             </div>
-            <div className="mt-3 flex items-center justify-between">
+            <div className="flex items-center justify-between mt-3">
               <p className="font-semibold text-md">Total</p>
               <p className="font-semibold">{totalPrice}</p>
             </div>
           </div>
           {person < 50 ? (
-            <p className="text-error text-xs text-left mt-2">
-              Total person can't be less than 50
+            <p className="mt-2 text-xs text-left text-error">
+              Total person can't be less than 1
             </p>
           ) : null}
           <button
@@ -126,7 +126,7 @@ export default function PackageDetails() {
       </div>
       {/* ===================== First Section End ===================== */}
 
-      <div className="mt-16 px-6">
+      <div className="px-6 mt-16">
         <Navigation description={description} foodId={id} />
         <SuggestedFood foodId={_id} />
       </div>
@@ -136,10 +136,10 @@ export default function PackageDetails() {
         <>
           <input type="checkbox" id="my-modal-order" className="modal-toggle" />
           <div className="modal modal-open">
-            <div className="modal-box border-2 border-gray-400 relative">
+            <div className="relative border-2 border-gray-400 modal-box">
               <button
                 onClick={() => setOpen(false)}
-                className="btn btn-sm btn-circle absolute right-2 top-2"
+                className="absolute btn btn-sm btn-circle right-2 top-2"
               >
                 ✕
               </button>
