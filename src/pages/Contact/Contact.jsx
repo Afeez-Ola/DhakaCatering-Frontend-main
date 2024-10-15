@@ -10,51 +10,49 @@ export default function Contact() {
     <div className="">
       <PageBanner bg_img={bg_img} title="Contact" />
       <div className="pt-16">
-        <div className="text-center mb-10">
-          <p className="text-center mb-3 font-semibold text-accent">
+        <div className="mb-10 text-center">
+          <p className="mb-3 font-semibold text-center text-accent">
             Contact Us
           </p>
           <h3 className="text-3xl font-bold ">Get In Touch</h3>
         </div>
 
         {/* First Section */}
-        <div className="flex justify-center px-5 flex-wrap gap-6">
-          <div className="card w-96 bg-base-200 text-center shadow-lg">
-            <div className="card-body items-center">
+        <div className="flex flex-wrap justify-center gap-6 px-5">
+          <div className="text-center shadow-lg card w-96 bg-base-200">
+            <div className="items-center card-body">
               <IoMdMailUnread className="text-3xl text-lime-500" />
               <h2 className="card-title">Email Adress</h2>
               <p className="leading-snug text-slate-500">
-                dhakacatering@gmail.info <br />
-                mail.dhakacatering@gmail.info
+                tjdammy@yahoo.com<br />
               </p>
             </div>
           </div>
-          <div className="card w-96 bg-base-200 text-center shadow-lg">
-            <div className="card-body items-center">
+          <div className="text-center shadow-lg card w-96 bg-base-200">
+            <div className="items-center card-body">
               <FaPhoneAlt className="text-3xl text-red-500" />
               <h2 className="card-title">Phone Number</h2>
               <p className="leading-snug text-slate-500">
-                +880 1703797823 <br />
-                +880 1703797823
+                +436764022539<br />
               </p>
             </div>
           </div>
-          <div className="card w-96 bg-base-200 text-center shadow-lg">
-            <div className="card-body items-center">
+          <div className="text-center shadow-lg card w-96 bg-base-200">
+            <div className="items-center card-body">
               <HiBuildingOffice2 className="text-3xl text-amber-500" />
               <h2 className="card-title">Office Address</h2>
               <p className="leading-snug text-slate-500">
-                PA-150/Bashtola, South Badda <br /> Dhaka 1212
+                NEUBAUGASSE 71,  <br /> Vienna 1070
               </p>
             </div>
           </div>
         </div>
 
         {/* Second Section */}
-        <div className="flex py-24 flex-wrap gap-8 justify-center bg-slate-200 mt-16">
-          <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+        <div className="flex flex-wrap justify-center gap-8 py-24 mt-16 bg-slate-200">
+          <div className="flex-shrink-0 w-full max-w-sm shadow-2xl card bg-base-100">
             <div className="card-body">
-              <h3 className="text-center font-bold">What's on Your Mind</h3>
+              <h3 className="font-bold text-center">What's on Your Mind</h3>
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">Email</span>
@@ -62,7 +60,7 @@ export default function Contact() {
                 <input
                   type="text"
                   placeholder="email"
-                  className="input rounded-md input-bordered"
+                  className="rounded-md input input-bordered"
                 />
               </div>
               <div className="form-control">
@@ -72,7 +70,7 @@ export default function Contact() {
                 <input
                   type="text"
                   placeholder="subject"
-                  className="input rounded-md input-bordered"
+                  className="rounded-md input input-bordered"
                 />
               </div>
               <div className="form-control">
@@ -83,10 +81,10 @@ export default function Contact() {
                   row={4}
                   type="text"
                   placeholder="message"
-                  className="textarea rounded-md resize-none input-bordered"
+                  className="rounded-md resize-none textarea input-bordered"
                 />
               </div>
-              <div className="form-control mt-6">
+              <div className="mt-6 form-control">
                 <button className="btn">Send</button>
               </div>
             </div>
