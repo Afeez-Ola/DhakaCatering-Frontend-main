@@ -69,22 +69,6 @@ export default function About () {
               name='Victoria Oluwatosin Stephen'
               profession='Founder & Chief Chef'
             />
-            {/* <TeamCard
-              img={kazi_shuvo}
-              name='Kazi Shuvo'
-              profession='Lead Manager'
-            />
-            <TeamCard
-              img={riyad_hossain}
-              name='Riyad Hossain'
-              profession='Software Engineer'
-            />
-            <TeamCard
-              img={cheif_chef}
-              name='
-              Tommy Miah'
-              profession='Cheif Chef'
-            /> */}
           </div>
         </div>
       </div>

@@ -6,13 +6,13 @@ import UserIcon from "../components/ProfileIn";
 export default function Navbar() {
   return (
     <div className="mx-4 mt-4">
-      <div className="navbar bg-base-300 shadow-md px-2 rounded-full">
+      <div className="px-2 rounded-full shadow-md navbar bg-base-300">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
+                className="w-5 h-5"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -27,51 +27,51 @@ export default function Navbar() {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-compact dropdown-content shadow-md mt-5 p-2 bg-base-200 rounded-box w-52 flex gap-3"
+              className="flex gap-3 p-2 mt-5 shadow-md menu menu-compact dropdown-content bg-base-200 rounded-box w-52"
             >
-              <li className="hover-bordered font-semibold flex justify-center content-center">
+              <li className="flex content-center justify-center font-semibold hover-bordered">
                 <Link className="" to="/">
                   Home
                 </Link>
               </li>
-              <li className="font-semibold hover-bordered flex justify-center content-center">
+              <li className="flex content-center justify-center font-semibold hover-bordered">
                 <Link to="/menu">Menu</Link>
               </li>
-              <li className="font-semibold flex hover-bordered justify-center content-center">
+              <li className="flex content-center justify-center font-semibold hover-bordered">
                 <Link to="/gallery">Gallery</Link>
               </li>
-              <li className="font-semibold flex hover-bordered justify-center content-center">
+              <li className="flex content-center justify-center font-semibold hover-bordered">
                 <Link to="/contact">Contact</Link>
               </li>
-              <li className="font-semibold flex justify-center hover-bordered content-center">
+              <li className="flex content-center justify-center font-semibold hover-bordered">
                 <Link to="/about">About</Link>
               </li>
             </ul>
           </div>
           <Link
             to="/"
-            className="btn hidden sm:flex btn-ghost font-bold normal-case text-xl"
+            className="hidden text-xl font-bold normal-case btn sm:flex btn-ghost"
           >
-            Dhaka Catering
+            DarVoo Catering
           </Link>
         </div>
-        <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1 flex gap-3">
-            <li className="hover-bordered font-semibold flex justify-center content-center">
+        <div className="hidden navbar-center lg:flex">
+          <ul className="flex gap-3 px-1 menu menu-horizontal">
+            <li className="flex content-center justify-center font-semibold hover-bordered">
               <Link className="" to="/">
                 Home
               </Link>
             </li>
-            <li className="font-semibold hover-bordered flex justify-center content-center">
+            <li className="flex content-center justify-center font-semibold hover-bordered">
               <Link to="/menu">Package</Link>
             </li>
-            <li className="font-semibold flex hover-bordered justify-center content-center">
+            <li className="flex content-center justify-center font-semibold hover-bordered">
               <Link to="/gallery">Gallery</Link>
             </li>
-            <li className="font-semibold flex hover-bordered justify-center content-center">
+            <li className="flex content-center justify-center font-semibold hover-bordered">
               <Link to="/contact">Contact</Link>
             </li>
-            <li className="font-semibold flex justify-center hover-bordered content-center">
+            <li className="flex content-center justify-center font-semibold hover-bordered">
               <Link to="/about">About</Link>
             </li>
           </ul>
